@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>bookproduct</display-name>
+   <filter>
+  	<filter-name>encodingFiter</filter-name>
+  	<filter-class>com.liwangwang.util.EncodingFiter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFiter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>actionServlet</servlet-name>
+  	<servlet-class>com.zking.framework.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>actionServlet</servlet-name>
+  	<url-pattern>*.action</url-pattern>
+  </servlet-mapping>
+</web-app>

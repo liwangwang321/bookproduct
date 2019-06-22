@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- <action path="/regAction" type="test.RegAction">
+		<forward name="failed" path="/reg.jsp" redirect="false" />
+		<forward name="success" path="/login.jsp" redirect="true" />
+	</action> -->
+	
+	<action path="/menuAction" type="com.liwangwang.web.MenuAction">
+		<forward name="index" path="/index.jsp" redirect="false" />
+	</action>
+	<action path="/userAction" type="com.liwangwang.web.UserAction">
+		<forward name="login" path="login.jsp" redirect="false" />
+		<forward name="index" path="index.jsp" redirect="false" />
+		<forward name="bindex" path="bindex.jsp" redirect="false" />
+		<forward name="addBook" path="addBook.jsp" redirect="false" />
+		<forward name="register" path="register.jsp" redirect="false" />
+	</action>
+	<action path="/categoryAction" type="com.liwangwang.web.CategoryAction">
+	
+	</action>
+	<action path="/bookAction" type="com.liwangwang.web.BookAction">
+		<forward name="findBook" path="findBook.jsp" redirect="false" />
+		<forward name="shopping" path="shoppingCar.jsp" redirect="false" />
+		<forward name="addorder" path="addOrder.jsp" redirect="false" />
+		<forward name="listBook1" path="listBook1.jsp" redirect="false" />
+		<forward name="listBook2" path="listBook2.jsp" redirect="false" />
+		<forward name="listBook3" path="listBook3.jsp" redirect="false" />
+		<forward name="uploadBookImage" path="uploadBookImage.jsp" redirect="false" />
+		<forward name="editBook" path="editBook.jsp" redirect="false" />
+	</action>
+	<action path="/orderAction" type="com.liwangwang.web.OrderAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		<forward name="listMyOrder2" path="listMyOrder2.jsp" redirect="false" />
+		<forward name="listMyOrder3" path="listMyOrder3.jsp" redirect="false" />
+		<forward name="listOrder1" path="listOrder1.jsp" redirect="false" />
+		<forward name="listOrder2" path="listOrder2.jsp" redirect="false" />
+		<forward name="listOrder3" path="listOrder3.jsp" redirect="false" />
+		<forward name="shopping" path="shoppingCar.jsp" redirect="false" />
+	</action>
+	<action path="/menuAction" type="com.liwangwang.web.MenuAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		
+	</action>
+	
+	<action path="/buserAction" type="com.liwangwang.web.BUserAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		
+	</action>
+	<action path="/broleAction" type="com.liwangwang.web.BRoleAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		
+	</action>
+	<action path="/buserroleAction" type="com.liwangwang.web.BUserRoleAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		
+	</action>
+	<action path="/bmenuroleAction" type="com.liwangwang.web.BMenuRoleAction">
+		<forward name="listMyOrder1" path="listMyOrder1.jsp" redirect="false" />
+		
+	</action>
+	
+</config>
